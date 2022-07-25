@@ -13,7 +13,7 @@ bool done = true;
 RotaryEncoder *encoder = nullptr;
 
 // Specify the PID object and initial tuning parameters (motor)
-double motorProportional = 10, motorIntegral = 0.1, motorDerivative = 0.2 tolerance = 1;
+double motorProportional = 10, motorIntegral = 0.1, motorDerivative = 0.2, tolerance = 1;
 PID motorPID(&motorFeedback, &motorOutput, &motorSetpoint, motorProportional, motorIntegral, motorDerivative, DIRECT);
 
 
